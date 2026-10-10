@@ -37,17 +37,42 @@ does not say what to do.
 
 ## Experience
 
-<!-- Draft written from the build log: personalize it before submitting. -->
-The packet layer was the quickest part. The RFC 1071 example and the "Hi!" packet
-from the assignment made good first tests, and testing every single-bit flip
-showed the checksum catches all of them. Most of the time went into the state
-machines and the in-memory lossy channel. The most instructive moment was a
-failing end-to-end seed. I traced it event by event and found the protocol was
-right: the FIN and its ACKs had been lost ten times in a row, which is exactly
-the case the 10-timeout rule and the receiver's linger exist for. Running the
-real relay afterwards held no surprises, because the tests had already exercised
-every path. The Task 6 numbers matched the back-of-the-envelope predictions
-closely, which made the analysis satisfying to write.
+For me this assignment was a powerful showcase of AI first development. The way in
+which I went about solving this problem was first I made a new directory for this
+project, then I cloned the repository into my CS 425 repos, and I added the relay.py
+into the folder with claude in it. After that I started my claude session, gave it access,
+to the file path with the repo in it and started architecting the plan for the project. I
+almost always start off projects is I load my most powerful model that is included with my
+claude pro, which in this case was Opus 5.5 on High effort and walked through the creation
+of an architecture with it. I always find that if you spend the extra time at the start
+making sure the model understands the problem, knows the hard constraints that it has to
+follow, understands the dependencies it has to work with and systems it is expected to run on
+then you are able to get some really great results from it in the planning phase! I would say that
+I spent about an hour fine tuning how I wanted that architecture to work and then I had the model
+commit the doc with the architecture along with any other important pieces of context to its memory
+and then make me a hand off prompt to pass into a new session that will actually end up coding the
+project based on the architecture. I cleared my context and started a new session with Opus 5.5 on
+High effort using the hand off prompt and architecture doc that I had made so the code could start
+being generated. I made sure that the model would ask me for clarification if it was ever unsure or
+ran into a hard problem plus I had it stop periodically at different milestones so I could look things
+over before we continued any further in the project. Overall the model did not run into many issues,
+just 1 or 2 bugs that it was able to solve in a matter of minutes. Overall I would say that the code
+generation phase took about 2 hours then when it was verifying the functionality of the code at the end
+which it predicted would take about 15 minutes, I went off and got some lunch. Once I came back home I did
+one final look over of the code. Made sure that it compiled cleanly on codespaces and on onyx, wrote the
+summary that you are reading right now, and committed all my changes.
+
+I really have enjoyed learning more about how the CLI tools for AI models work! This was not a tool I
+leveraged properly in the past and I am now starting to see how freakishly powerful it is in this form
+even when compared to its highest level in the GUI based application. I think the next thing I would like
+to learn about is how to break my architecture into pieces that I can farm out to agents instead of having
+one model pounds away on it linearly. I think this would help me save tokens and time if I can get some
+parallel work going with smaller context windows. I also throughout this really started to think about
+how I want to start saving memory for these models and started figuring out how I would personally want to
+incorporate an obsidian brain into my CLI workflow. That is going to be a project I work on in my own time
+certainly but this project in particular did a great job sparking that interest. I think this was a well written
+assignment and I do think I learned a ton about how AI driven development works and how to get some
+quality results out of the models that you are using!
 
 ## Design
 
