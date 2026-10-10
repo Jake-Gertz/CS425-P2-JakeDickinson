@@ -1,0 +1,37 @@
+2026-10-10 11:52:31,100 listening on udp 127.0.0.1:42510, delay 50 ms
+2026-10-10 11:52:32,037 session jakedickinson-w1-l0-r1: receiver 127.0.0.1:36691
+2026-10-10 11:52:32,543 session jakedickinson-w1-l0-r1: sender 127.0.0.1:43809, loss 0 corrupt 0 dup 0
+2026-10-10 11:54:17,526 session jakedickinson-w1-l0-r2: receiver 127.0.0.1:44528
+2026-10-10 11:54:18,033 session jakedickinson-w1-l0-r2: sender 127.0.0.1:35090, loss 0 corrupt 0 dup 0
+2026-10-10 11:54:46,166 session jakedickinson-w1-l0-r1 ended (idle) after 103.4s; to receiver: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 11:56:03,043 session jakedickinson-w1-l0-r3: receiver 127.0.0.1:42455
+2026-10-10 11:56:03,549 session jakedickinson-w1-l0-r3: sender 127.0.0.1:53880, loss 0 corrupt 0 dup 0
+2026-10-10 11:56:31,186 session jakedickinson-w1-l0-r2 ended (idle) after 103.5s; to receiver: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 11:57:48,591 session jakedickinson-w16-l0-r1: receiver 127.0.0.1:56261
+2026-10-10 11:57:49,097 session jakedickinson-w16-l0-r1: sender 127.0.0.1:42196, loss 0 corrupt 0 dup 0
+2026-10-10 11:57:57,637 session jakedickinson-w16-l0-r2: receiver 127.0.0.1:41129
+2026-10-10 11:57:58,143 session jakedickinson-w16-l0-r2: sender 127.0.0.1:47752, loss 0 corrupt 0 dup 0
+2026-10-10 11:58:06,683 session jakedickinson-w16-l0-r3: receiver 127.0.0.1:33031
+2026-10-10 11:58:07,187 session jakedickinson-w16-l0-r3: sender 127.0.0.1:59230, loss 0 corrupt 0 dup 0
+2026-10-10 11:58:15,728 session jakedickinson-w1-l5-r1: receiver 127.0.0.1:48415
+2026-10-10 11:58:16,236 session jakedickinson-w1-l5-r1: sender 127.0.0.1:58317, loss 0.05 corrupt 0 dup 0
+2026-10-10 11:58:17,242 session jakedickinson-w1-l0-r3 ended (idle) after 103.5s; to receiver: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 11:58:26,285 session jakedickinson-w16-l0-r1 ended (idle) after 7.0s; to receiver: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 11:58:35,326 session jakedickinson-w16-l0-r2 ended (idle) after 7.0s; to receiver: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 11:58:44,614 session jakedickinson-w16-l0-r3 ended (idle) after 7.0s; to receiver: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1025 in, 0 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 12:00:28,560 session jakedickinson-w1-l5-r2: receiver 127.0.0.1:57983
+2026-10-10 12:00:29,068 session jakedickinson-w1-l5-r2: sender 127.0.0.1:34045, loss 0.05 corrupt 0 dup 0
+2026-10-10 12:00:56,585 session jakedickinson-w1-l5-r1 ended (idle) after 130.8s; to receiver: 1134 in, 60 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1074 in, 49 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 12:02:44,379 session jakedickinson-w1-l5-r3: receiver 127.0.0.1:52138
+2026-10-10 12:02:44,886 session jakedickinson-w1-l5-r3: sender 127.0.0.1:45601, loss 0.05 corrupt 0 dup 0
+2026-10-10 12:03:12,408 session jakedickinson-w1-l5-r2 ended (idle) after 133.8s; to receiver: 1146 in, 57 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1089 in, 64 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 12:04:56,697 session jakedickinson-w16-l5-r1: receiver 127.0.0.1:59243
+2026-10-10 12:04:57,205 session jakedickinson-w16-l5-r1: sender 127.0.0.1:40621, loss 0.05 corrupt 0 dup 0
+2026-10-10 12:05:22,724 session jakedickinson-w16-l5-r2: receiver 127.0.0.1:32798
+2026-10-10 12:05:23,231 session jakedickinson-w16-l5-r2: sender 127.0.0.1:50554, loss 0.05 corrupt 0 dup 0
+2026-10-10 12:05:25,289 session jakedickinson-w1-l5-r3 ended (idle) after 130.3s; to receiver: 1131 in, 52 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1079 in, 54 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 12:05:45,536 session jakedickinson-w16-l5-r3: receiver 127.0.0.1:35465
+2026-10-10 12:05:46,044 session jakedickinson-w16-l5-r3: sender 127.0.0.1:48585, loss 0.05 corrupt 0 dup 0
+2026-10-10 12:05:51,269 session jakedickinson-w16-l5-r1 ended (idle) after 24.0s; to receiver: 1910 in, 115 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1795 in, 100 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 12:06:13,561 session jakedickinson-w16-l5-r2 ended (idle) after 20.8s; to receiver: 1757 in, 85 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1672 in, 85 dropped, 0 corrupted, 0 duplicated, 0 throttled
+2026-10-10 12:06:36,588 session jakedickinson-w16-l5-r3 ended (idle) after 21.0s; to receiver: 1761 in, 71 dropped, 0 corrupted, 0 duplicated, 0 throttled; to sender: 1690 in, 68 dropped, 0 corrupted, 0 duplicated, 0 throttled

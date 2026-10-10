@@ -1,0 +1,23 @@
+Task 6 benchmark, 2026-10-10 11:52:32
+host: Linux 6.18.40.1-microsoft-standard-WSL2 x86_64; relay --delay 50 on 127.0.0.1:42510; timeout 250 ms (default);
+file: 1mib.bin (1048576 bytes = 1025 packets); 3 runs per combination; every copy checked with cmp
+
+jakedickinson-w1-l0-r1     window  1 loss 0     102.993 s  send=0 recv=0  identical  sent/retx/timeouts: 1025 0 0
+jakedickinson-w1-l0-r2     window  1 loss 0     103.004 s  send=0 recv=0  identical  sent/retx/timeouts: 1025 0 0
+jakedickinson-w1-l0-r3     window  1 loss 0     103.027 s  send=0 recv=0  identical  sent/retx/timeouts: 1025 0 0
+jakedickinson-w16-l0-r1    window 16 loss 0       6.552 s  send=0 recv=0  identical  sent/retx/timeouts: 1025 0 0
+jakedickinson-w16-l0-r2    window 16 loss 0       6.555 s  send=0 recv=0  identical  sent/retx/timeouts: 1025 0 0
+jakedickinson-w16-l0-r3    window 16 loss 0       6.553 s  send=0 recv=0  identical  sent/retx/timeouts: 1025 0 0
+jakedickinson-w1-l5-r1     window  1 loss 0.05  130.339 s  send=0 recv=0  identical  sent/retx/timeouts: 1134 109 109
+jakedickinson-w1-l5-r2     window  1 loss 0.05  133.325 s  send=0 recv=0  identical  sent/retx/timeouts: 1146 121 121
+jakedickinson-w1-l5-r3     window  1 loss 0.05  129.823 s  send=0 recv=0  identical  sent/retx/timeouts: 1131 106 106
+jakedickinson-w16-l5-r1    window 16 loss 0.05   23.535 s  send=0 recv=0  identical  sent/retx/timeouts: 1910 885 56
+jakedickinson-w16-l5-r2    window 16 loss 0.05   20.319 s  send=0 recv=0  identical  sent/retx/timeouts: 1757 732 46
+jakedickinson-w16-l5-r3    window 16 loss 0.05   20.519 s  send=0 recv=0  identical  sent/retx/timeouts: 1761 736 46
+
+| Window | Loss | Run 1 (s) | Run 2 (s) | Run 3 (s) | Mean (s) | Throughput (KiB/s) | Mean retransmitted | Mean timeouts |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 0 | 102.99 | 103.00 | 103.03 | 103.01 | 9.9 | 0 | 0 |
+| 16 | 0 | 6.55 | 6.55 | 6.55 | 6.55 | 156.3 | 0 | 0 |
+| 1 | 0.05 | 130.34 | 133.32 | 129.82 | 131.16 | 7.8 | 112 | 112 |
+| 16 | 0.05 | 23.54 | 20.32 | 20.52 | 21.46 | 47.7 | 784 | 49 |

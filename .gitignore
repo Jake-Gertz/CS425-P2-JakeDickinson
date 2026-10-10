@@ -54,3 +54,7 @@ dkms.conf
 /myprogram
 /build
 /.vscode/c_cpp_properties.json
+
+# Test data (P2)
+*.bin
+results/*.bin
